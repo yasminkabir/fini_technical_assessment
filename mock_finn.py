@@ -9,8 +9,7 @@ def finn(query: str) -> str:
         if any(keyword in q for keyword in entry ["keywords"]):
             return entry["answer"]
     else:
-        return "I don’t have that information yet, but I can point you to resources!"
-
+        return "I don’t have that information yet."
 if __name__ == "__main__":
     while True:
         query = input("Ask Finn a question (or type 'quit'): ")
