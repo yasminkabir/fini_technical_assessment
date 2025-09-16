@@ -1,1 +1,2 @@
-# fini_technical_assessment
+# Bringing Finn to Life
+

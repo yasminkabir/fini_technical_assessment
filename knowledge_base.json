@@ -18,5 +18,9 @@
   {
     "keywords": ["exercise", "workout", "movement"],
     "answer" : "Adults should try to get at least 30 minutes of exercise every day."
+  },
+  {
+    "keywords": ["pain", "attack", "hurt", "harm", "severe", "intense", "bleed"],
+    "answer": "I can’t provide medical advice. Please call emergency services immediately."
   }
 ]
