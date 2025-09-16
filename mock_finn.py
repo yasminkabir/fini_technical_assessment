@@ -5,18 +5,9 @@ with open("knowledge_base.json") as f:
 
 def finn(query: str) -> str:
     q = query.lower()
-    if "water" in q or "drink" in q:
-        return kb["hydration"]
-    elif "sleep" in q:
-        return kb["sleep"]
-    elif "stress" in q:
-        return kb["stress"]
-    elif "tired" in q:
-        return kb["tired"]
-    elif "eat" in q:
-        return kb["eat"]
-    elif "exercise" in q:
-        return kb["exercise"]
+    for entry in kb:
+        if any(keyword in q for keyword in entry ["keywords"]):
+            return entry["answer"]
     else:
         return "I don’t have that information yet, but I can point you to resources!"
 
